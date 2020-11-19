@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div id="welcome">
+    <p id="loginh1">BOOMIPY</p>
+</div>
+<div id="hometext">
+    <p>Have an account?</p>
+    <hr>
+</div>
+<div id="login">
+    <a href="/accounts/login">
+        <button id="loginbtn" class="btn waves-effect waves-light" type="submit">LOGIN</button>
+    </a> 
+</div>
+<div id="hometext">
+    <p>Don't have an account?</p>
+    <hr>
+</div>
+<div id="signup">
+    <a href="/accounts/signup">
+        <button id="signupbtn" class="btn waves-effect waves-light" type="submit">SIGN UP</button>
+    </a> 
+</div>
+
+{% endblock %}

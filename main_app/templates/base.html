@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>BOOMIPY</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+
+    <!-- <div id="iconnav" class="fixed-action-btn">
+      <a class="btn-floating dark">
+        <i class="large material-icons">menu</i>
+      </a>
+      <ul>
+        <li><a class="btn-floating red"><i class="material-icons" onclick="goBack()">arrow_back</i></a></li>
+        <li><a class="btn-floating red" href="/landing"><i class="material-icons"  >home</i></a></li>
+        <li><a class="btn-floating red"href="/logout"><i class="material-icons"  >power_settings_new</i></a></li>
+      </ul>
+    </div> -->
+
+    {% if user.is_authenticated %}
+    <div class="topnavbar">
+      <a onclick="goBack()" >BACK</a>
+      <a href="/landing">HOME</a>
+      <a href="{% url 'logout' %}">LOGOUT</a>
+    </div> 
+    <div class="bottomnavbar">
+      <a href="/landing">TOP 100</a>
+      <a href="/myplaylist">MY PLAYLISTS</a>
+    </div>
+    {% else %}
+    <div class="topnavbar">
+      <p> PLEASE LOG IN OR SIGN UP</p>
+    </div> 
+    {% endif %}
+  <main id="maininfo"> 
+    {% block content %}
+    {% endblock %}
+  </main>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+      document.addEventListener('DOMContentLoaded', function() {
+        const elems = document.querySelectorAll('.fixed-action-btn');
+        const instances = M.FloatingActionButton.init(elems, {direction: 'left',
+          hoverEnabled: false
+        });
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const elems = document.querySelectorAll('.modal');
+        M.Modal.init(elems, {});
+      });
+    
+    </script>
+  </body>
+</html>

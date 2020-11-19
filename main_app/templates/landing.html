@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div id="textstuff">
+    <div id="charttitle">
+        <h1 >{{ songchart.title}} </h1>
+    </div>
+    <div id="chartweek">
+        <p>FOR THE WEEK OF {{ songchart.date }}</p>
+    </div>
+    <div id="line">
+        <hr>
+    </div> 
+    {% for song in songs %}
+    <div id="topsongdiv">
+        <div>
+            <p id="songrank">{{ song.rank}}.
+            {{ song.title }}</p>
+            <p id="songartist" >{{ song.artist }}</p>
+            <div id="tagsfortop">
+                <button id="weeksonchart" class=" btn-medium waves-effect waves-light">WEEKS ON CHART: {{song.weeks }}</button>
+                {% if song.isNew %}
+                <div id="isnewdiv">
+                    <button id="isnew" class=" btn-medium waves-effect waves-light">NEW ON CHART</button>
+                </div>
+                {% endif %}
+              </div>
+        </div>
+    </div>
+     {% endfor %}
+</div>
+{% endblock %}

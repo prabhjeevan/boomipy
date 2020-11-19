@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div id="addplaylistpage"> 
+        {% if object %}
+        <p id="newplaylist">Edit <span class="teal-text">{{object.name}}</span></p>
+        {% else %}
+        <p id="newplaylist">NEW SONG</p>
+        {% endif %}
+        
+          <form action="" method="post">
+            {% csrf_token %}
+            <table id="playlistform">
+              {{ form.as_table }}
+            </table>
+            <input id="addnewsongbuttonform" type="SUBMIT"></input> 
+          </form>
+        </div>
+{% endblock %}

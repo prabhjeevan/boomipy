@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div id="deleteplaylistpage"> 
+  <p id="newplaylist">Delete Playlist</p>
+  <p id="deleteconfirm">Are you sure you want to delete {{ object.name }}?</p>
+  <form action="" method="POST">
+    {% csrf_token %}
+  <div id="deletecancelbtns">
+    <input id="canceldeletebtn" type="submit" value="Delete!" class="btn">
+    <a id="canceldeletebtn" class="btn" href="{% url 'myplaylist' %}">Cancel</a>
+  </div>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,541 @@
+@media screen and (max-width: 480px) {
+
+  body {
+    background: linear-gradient( #c31432 0%, #1f092f 100%);
+    height: 100vh;
+    color:white;
+    font-family: 'Rajdhani', sans-serif;
+    background-attachment: fixed;
+  }
+  
+  #textstuff {
+    font-size: 20px; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+  
+  h1 {
+    position:inherit;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    font-size: 40px; 
+  }
+  
+  h3 {
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  
+  .bottomnavbar {
+    overflow: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    background-color: #FF345B;
+    justify-content: space-around;
+    z-index: 9999;
+  }
+  
+  .bottomnavbar a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 7px 16px;
+    
+  }
+  
+  .topnavbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0 0 30px 30px;
+    margin: 0 0 0 0;
+    z-index: 9999;
+  }
+  
+  .topnavbar a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 3px 0px;
+  }
+  
+  #iconnav {
+    position: fixed;
+    top: 10px;
+  }
+  
+  #line {
+    margin: 0 15px 0 0 ;
+  }
+  #welcome {
+   text-align: center;
+   margin-top: 90px;
+   font-size: 50px;
+  }
+  
+  
+  #login {
+    text-align: center;
+    margin: 10px;
+  }
+  #loginbtn{
+    font-size:13px;
+    background-color: rgba(0, 0 , 0, 0.8);
+    width: 100px;
+  }
+  #signup {
+    text-align: center;
+    
+  }
+  #signupbtn{
+    font-size:13px;
+    background-color: rgba(0, 0 , 0, 0.8);
+    width: 100px;
+  }
+  #hometext {
+    width: 200px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+  
+  #loginpage {
+    margin:  100px 40px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+    height: 230px
+    
+  }
+  
+  #loginpage h1{
+    margin: 0px;
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  #loginpage form {
+    margin: 1px;
+    font-size: 1px;
+  }
+  #loginbutton {
+    float: right;
+    font-size: 14px;
+    height: 35px;
+    margin-top: 0px;
+  }
+  
+  #buttonlogin{
+  font-size:15px;
+  }
+  
+  #signuppage {
+    margin:  100px 40px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+    height: 340px
+    
+  }
+  
+  #signupform ul{
+    visibility: hidden;
+  }
+  #signupform span{
+    visibility: hidden;
+  }
+  
+  #signuppage h1{
+    margin: 0px;
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  #signuppage form {
+    margin: 1px;
+    font-size: 1px;
+  }
+  #signupbutton {
+    float: right;
+    font-size: 14px;
+    height: 35px;
+  }
+  
+  #signuppage p{
+    margin: 8px 0px;
+  }
+  
+  
+  .playlists{
+    background-color: white;
+    width: auto;
+    padding: 0px 5px;
+    margin-right: 10px;
+    border-radius: 15px;
+    height: 105px;
+    font-family: 'Ropa Sans', sans-serif;
+  }
+  
+  .playlists p{
+    font-size: 17px;
+    margin: 0px 0px 0px 8px ;
+    font-weight: 600;
+    color: black;
+  }
+  
+  
+  #playlistname{
+    font-size: 30px;
+    margin: 0px 0px 0px 8px ;
+    font-weight: 900;
+  }
+  
+  #playlistsdescription {
+    font-size: 17px;
+    margin: 0px 0px 0px 8px ;
+    font-weight: 600;
+    color: black;
+  }
+  
+  #numbersongs{
+  float:right;
+  margin-right: 10px;
+  font-size: 19px;
+  font-weight: lighter;
+  margin-top: 3px;
+  }
+  
+  #updatebtn{
+    background-color: #F82828;
+    font-size: 13px;
+    border: 3px solid #F82828;
+    border-radius: 12px;
+    color: white;
+    font-family: 'Ropa Sans', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+  }
+  
+  #deletebtn{
+    background-color: #F82828;
+    font-size: 13px;
+    border: 3px solid #F82828;
+    border-radius: 12px;
+    color: white;
+    font-family: 'Ropa Sans', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    margin-left: 10px;
+  }
+  
+  #playlistbtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #headerplaylist{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+  }
+  #addplaylist{
+    position: fixed;
+    right: 13px;
+  }
+  
+  #id_description{
+    font-size: 15px;
+    border: 0px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.8);
+  }
+  
+  #addplaylistpage{ 
+    margin:  100px 40px;
+    background-color: rgba(37, 37, 37, 0.8);
+    border-radius: 40px;
+    padding: 10px;
+    color: white;
+    height: 280px
+  }
+  #submitplaylist{
+   margin: 20px 25%;
+   background-color: #FF345B;
+   font-family: 'Rajdhani', sans-serif;
+   font-size: 17px;
+   font-weight: bolder;
+  }
+  #newplaylist{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 24px;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+  }
+  
+  #playlistform{
+    margin-top: 0px;
+  
+  }
+  #playlistform input {
+    color: rgba(255,255,255,0.8);
+  }
+  
+  #playlistdiv{
+    margin-bottom: 15px;
+  }
+  
+  #songselse{
+    opacity: 0.7;
+    font-weight: lighter;
+    text-align: center;
+    z-index: 9990;
+  }
+  #deleteconfirm{
+    font-size: 20px;
+    text-align: center;
+  
+  }
+  #deletecancelbtns{  
+    text-align: center;
+  }
+  
+  #canceldeletebtn{
+    background-color: #FF345B;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    text-decoration: none;
+    width: 100px;
+    margin-left: 5px;
+  }
+  
+  #deleteplaylistpage{
+    margin:  100px 40px;
+    background-color: rgba(37, 37, 37, 0.8);
+    border-radius: 40px;
+    padding: 10px;
+    color: white;
+    height: 220px
+  }
+  
+  #charttitle {
+    margin: 0 auto ;
+    text-align: center;
+   
+  }
+  
+  #topsongdiv {
+    background-color: rgba(0, 0 , 0, 0.6);
+    width: auto;
+    margin-right: 10px;
+    padding: 1px 5px;
+    border-radius: 15px;
+    height: auto;
+    font-family: 'Ropa Sans', sans-serif;
+    color: white;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+  }
+  
+  #songrank {
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 0px;
+    margin-left: 10px;
+    font-weight: bolder;
+  }
+  
+  #songartist {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-left: 24px;
+    font-weight: lighter;
+    margin-bottom: 0px;
+  }
+  
+  #isnew {
+    background-color: #f86868;
+    font-size: 13px;
+    border: 3px solid #f86868;
+    border-radius: 12px;
+    color: white;
+    font-family: 'Ropa Sans', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    margin-left: 10px;
+  }
+  
+  #isnewdiv{
+    position: relative;
+    float: right;
+    font-size: 5px;
+    margin-top: 0px;
+    
+  }
+  
+  #chartweek{
+    opacity: 0.9;
+    font-weight: lighter;
+    margin: 0 auto ;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  
+  #tagsfortop{ 
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    padding: 10px 15px 0px 5px;
+    margin-bottom: 5px;
+  }
+  #weeksonchart{
+    background-color: #f86868;
+    font-size: 13px;
+    border: 3px solid #f86868;
+    border-radius: 12px;
+    color: white;
+    font-family: 'Ropa Sans', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    
+  }
+
+  #addsongbutton{
+    position: fixed;
+    right: 13px;
+    z-index: 9999;
+  }
+
+  #addsongstitle h3{
+    margin-top: 55px;
+    font-size: 35px;
+  }
+  
+ #addtoplaylistbutton{
+    background-color: #f86868;
+    font-size: 13px;
+    border: 3px solid #f86868;
+    border-radius: 12px;
+    color: white;
+    font-family: 'Ropa Sans', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    position: inherit;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding: 3px 10px;
+ }
+
+ #availablesongdiv{
+  background-color: rgba(0, 0 , 0, 0.6);
+  width: auto;
+  margin-right: 10px;
+  border-radius: 15px;
+  height: auto;
+  font-family: 'Ropa Sans', sans-serif;
+  color: white;
+  margin-bottom: 10px;
+  padding: 1px 3px 3px 15px;
+  margin-bottom: 10px;
+}
+#songinfo{
+  display: flex;
+  flex-direction: row;
+}
+
+#songartist2{
+  margin-left: 3px;
+  font-size: 15px;
+  margin-top: 0;
+}
+#songname2{
+font-size: 25px;
+margin-bottom: 0;
+margin-top: 3px;
+padding-bottom: 0px;
+}
+
+
+
+#removesongbutton {
+  background-color: #f86868;
+  font-size: 13px;
+  border: 3px solid #f86868;
+  border-radius: 12px;
+  color: white;
+  font-family: 'Ropa Sans', sans-serif;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+  position: inherit;
+  margin: 0 auto;
+  margin-left: 20px;
+  margin-right: 10px;
+  padding: 3px 10px;
+}
+
+#playlistsongdiv{
+  background-color: white;
+  width: auto;
+  padding: 0px 5px;
+  margin-right: 10px;
+  border-radius: 15px;
+  height: auto;
+  font-family: 'Ropa Sans', sans-serif;
+  margin-left:10px;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+}
+
+#boxx{
+  display: flex;
+  flex-direction: row;
+}
+#addnewsongbuttonform{
+  background-color: #f86868;
+  font-size: 13px;
+  border: 3px solid #f86868;
+  border-radius: 12px;
+  color: white;
+  font-family: 'Ropa Sans', sans-serif;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+  position: inherit;
+  margin-left: 70px;
+
+
+  padding: 3px 10px;
+}
+
+#signupbtnlogin{
+  text-decoration: none;
+  color: white;
+  width: 100px;
+  font-size: 13px;
+}
+#signupbtnloginbtn{
+  width: 90px;
+  padding-top: 0px;
+  height: 35px;
+}
+#loginbuttonsignup{
+  float: right;
+    font-size: 14px;
+    height: 35px;
+    margin-top: 2px;
+    width: 93px;
+}
+
+}

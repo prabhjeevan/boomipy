@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h4>Delete {{ object.name }} -</h4>
+  <h4>By {{ object.artist }}?</h4>
+  <form action="" method="POST">
+    {% csrf_token %}
+    <button type="submit">Delete</button>
+    <button><a onclick="goBack()" >Back</a></button>
+  </form>
+{% endblock %}

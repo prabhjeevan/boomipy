@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div id="textstuff">
+    <div id="addsongstitle">
+        <h3>AVAILABLE SONGS</h3>
+    </div>
+    <div id="addsongbutton">
+        <a  class="btn-floating btn-medium waves-effect waves-light red modal-trigger" href="/myplaylist/song/create" ><i class="material-icons">add</i></a>
+    </div>
+    <div id="line">
+        <hr>
+    </div> 
+    {% if songs.count %}
+        {% for song in songs %}
+        <div id="availablesongdiv" >
+                <p id="songname2"> {{ song.name }} </p>
+                <div id="boxx">
+                    <p id="songartist2">{{ song.artist }}</p> 
+                    <form action="{% url 'song_associate' playlist.id song.id %}" method="post">
+                    {% csrf_token %}
+                        <button id="addtoplaylistbutton" class=" btn-medium waves-effect waves-light" type="submit" >ADD</button>
+                    </form>
+                </div>
+            
+        </div>
+        {% endfor %}
+    {% else %}
+        <h5>No Available Songs To Add</h5>
+    {% endif %}
+    {% if songs2.count %}
+        {% for song in songs2 %}
+        <div class="card">
+            {{ song.name }}
+            <div class="card-action">
+                <form action="{% url 'song_associate' playlist.id song.id %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="btn">Add</button>
+                </form>
+            </div>
+        </div>
+        {% endfor %}
+    {% endif %}
+</div>
+{% endblock %}
