@@ -126,7 +126,7 @@ def AddSongs(request):
     s = Song(name = namebillboard, artist = artistbillboard)
     s.save()
   
-  for song in songs:
+  for song in songs2:
     namebillboard2 = song.title
     artistbillboard2 = song.artist
     s = Song(name = namebillboard2, artist = artistbillboard2)
