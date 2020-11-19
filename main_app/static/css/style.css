@@ -140,7 +140,7 @@
   }
   
   #signuppage {
-    margin:  100px 40px;
+    margin:  100px 40px 15px 40px;
     border: 1px solid white;
     background-color: white;
     border-radius: 15px;
@@ -538,4 +538,29 @@ padding-bottom: 0px;
     width: 93px;
 }
 
+#signupinfo{
+  margin:  15px 40px;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
+  height: auto;
+  text-align: center;
+}
+#signupinfo h6{
+  padding-bottom: 0;
+}
+#signupinfo p{
+ margin-top: 2px;
+}
+#startinglogin {
+  margin:  15px 40px;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
+  height: auto;
+  width:auto;
+  text-align: center;
+}
 }

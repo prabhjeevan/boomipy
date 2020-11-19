@@ -14,7 +14,16 @@
     <input type="submit" class="btn" value="signup">
     <button id="loginbuttonsignup" class="btn" ><a id="signupbtnlogin" href="{% url 'login' %}">Login</a></button>
   </form>
- 
 </div>
 
+<div id="signupinfo">
+  <h6>CLICK SIGNUP FOR FIRST TIME.</h6>
+  <h6>Username</h6>
+  <p> Letters and digits only.</p>
+  <h6>Password</h6>
+  <ul>
+    <li>Can’t be too similar to your Username.</li>
+    <li>At least 8 characters.</li> 
+  </ul>
+</div>
 {% endblock %}
