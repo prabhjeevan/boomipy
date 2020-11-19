@@ -11,7 +11,7 @@
     <hr>
     </div>
     
-</div>
+
         {% if playlist.songs.count %}
             {% for song in playlist.songs.all %}
             <a href="{{playlist.id}}/{{song.id}}" target="_blank">
@@ -32,7 +32,7 @@
             <h5>NO SONGS IN THIS PLAYLIST!</h5>
         </div>
         {% endif %}
- 
+    </div>
 
 
 {% endblock %}

@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+
 
   body {
     background: linear-gradient( #c31432 0%, #1f092f 100%);
@@ -490,12 +490,12 @@ padding-bottom: 0px;
   background-color: white;
   width: auto;
   padding: 0px 5px;
-  margin-right: 10px;
+  margin-right: 13px;
   border-radius: 15px;
   height: auto;
   font-family: 'Ropa Sans', sans-serif;
-  margin-left:10px;
-  margin-bottom: 10px;
+  margin-left:5px;
+  margin-bottom: 12px;
   padding-bottom: 8px;
 }
 
@@ -579,5 +579,4 @@ padding-bottom: 0px;
   margin-right: 35px;
   margin-left: 15px;
   width: 90px;
-}
 }
