@@ -32,8 +32,8 @@ def signup(request):
 
 @login_required
 def myplaylist(request):
-  # playlist = Playlist.objects.filter(user=request.user)
-  playlist = Playlist.objects.all()
+  playlist = Playlist.objects.filter(user=request.user)
+  # playlist = Playlist.objects.all()
   username = request.user
   return render(request, 'myplaylist.html', {'playlist': playlist, 'username': username})
 
