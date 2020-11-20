@@ -11,19 +11,22 @@
     <div id="signupform">
       {{ form.as_p }}
     </div>
-    <input type="submit" class="btn" value="signup">
-    <button id="loginbuttonsignup2" class="btn" ><a id="signupbtnlogin" href="{% url 'login' %}">Login</a></button>
+    <input id="signup2" type="submit" class="btn" value="signup">
   </form>
+  <div id="haveaccount">
+  <p>Have an account?</p>
+  <hr>
+  <button id="loginbuttonsignup2" class="btn" ><a id="signupbtnlogin" href="{% url 'login' %}">Login</a></button>
+  </div>
 </div>
 
 <div id="signupinfo">
-  <h6>CLICK SIGNUP FOR FIRST TIME.</h6>
   <h6>Username</h6>
   <p> Letters and digits only.</p>
   <h6>Password</h6>
   <ul>
+    <li style="font-size: large;">**At least 8 characters.</li> 
     <li>Can’t be too similar to your Username.</li>
-    <li>At least 8 characters.</li> 
   </ul>
 </div>
 {% endblock %}
