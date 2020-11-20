@@ -606,9 +606,12 @@ padding-bottom: 0px;
   margin-left: 200px;
 }
 #loginpage {
-
   height: 260px
-  
+}
+
+#signuppage {
+
+  height: 470px;
 }
 
 }
