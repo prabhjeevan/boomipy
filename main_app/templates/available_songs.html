@@ -12,6 +12,12 @@
     <div id="line">
         <hr>
     </div> 
+    <div id="searchbar" class="search-container">
+        <form action="songs/searchbar" method="GET">
+            <input class="search-input" type="text" name="search" placeholder="Search by Artist"/>
+            <button class="search-btn" type="submit"><i class="fas fa-search">SEARCH</i></button>
+        </form>
+    </div>
     {% if songs.count %}
         {% for song in songs %}
         <div id="availablesongdiv" >

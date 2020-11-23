@@ -33,7 +33,6 @@ def signup(request):
 @login_required
 def myplaylist(request):
   playlist = Playlist.objects.filter(user=request.user)
-  # playlist = Playlist.objects.all()
   username = request.user
   return render(request, 'myplaylist.html', {'playlist': playlist, 'username': username})
 
@@ -54,8 +53,6 @@ def youtube_video(request, playlist_id, song_id):
 
   r = requests.get(search_url, params=params)
   videoid = r.json()['items'][0]['id']['videoId']
-
-  # vid_id = r.items[0].id.videoId
   return redirect(f'https://www.youtube.com/watch?v={videoid}')
 
 # CRUD for playlist
@@ -133,3 +130,11 @@ def AddSongs(request):
     s.save()
 
   return render(request, 'available_songs.html', {'name': username, 'songchart': songchart, 'songs': songs, 'songchart2': songchart2, 'songs2': songs2})
+
+def searchbar(request, playlist_id):
+  playlist = Playlist.objects.get(id=playlist_id)
+  if request.method == 'GET':
+    search = request.GET.get('search')
+    searchedsong = Song.objects.all().filter(artist__icontains=search)
+
+    return render(request, 'searchbar.html', {'playlist': playlist, 'searchedsong': searchedsong })

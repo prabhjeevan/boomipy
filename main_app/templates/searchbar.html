@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% if searchedsong %}
+<div id="searchedresulttitle">
+    <h1>SEARCH RESULT FOUND</h1>
+</div>
+{% for match in searchedsong %}
+<div id="searchedsongresults" >
+<p>{{match.name}} - {{match.artist}}</p>
+</div>
+{% endfor %}
+{% else %}
+
+<div id="searchresulttitle">
+    <h1>NO MATCHES</h1>
+</div>
+{%endif%}
+
+{% endblock %}

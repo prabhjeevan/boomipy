@@ -25,4 +25,5 @@ urlpatterns = [
   path('myplaylist/<int:playlist_id>/<int:song_id>', views.youtube_video, name='youtube'),
   path('myplaylist/<int:playlist_id>/songs', views.AvailableSongs, name="availabe_songs"),
   path('myplaylist/add-songs', views.AddSongs, name="add_songs"),
+  path('myplaylist/<int:playlist_id>/songs/searchbar', views.searchbar, name="searchbar")
   ]

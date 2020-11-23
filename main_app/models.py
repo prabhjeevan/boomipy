@@ -12,10 +12,6 @@ class Song(models.Model):
     def __str__(self):
         return self.name
 
-    # def get_absolute_url(self):
-    #     return reverse('myplaylist', kwargs={'id': self.id})
-    
-
 #adding a redirect url for a successful playlist creation
 class Playlist(models.Model):
     name = models.CharField(max_length=200)
